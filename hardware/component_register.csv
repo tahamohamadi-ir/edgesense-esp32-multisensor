@@ -1,0 +1,24 @@
+category,part_name,identification_confidence,planned_role
+ESP32-S3-CAM,ESP32-S3-WROOM N16R8,identified label,primary
+OV5640,camera flex OV5640 probable,probable,future
+Arduino UNO,UNO-compatible SMD,family confirmed,future
+MPU6050,GY-521,identified label,environment + PPG
+MLX90614,GY-906 / MLX90614 probable,probable,environment
+DS18B20,waterproof contact probe,purchase list,environment
+MAX30102,reflective PPG,identified label,PPG
+AD8232,ECG analog frontend,identified label,excluded body use
+ADS1115,16-bit ADC,identified label,future
+HY-SRF05,ultrasonic ranging,identified label,future with level shift
+PIR,HC-SR501 family probable,probable,future
+MH Water Sensor,contact water detector,identified label,future
+OLED 1.3,IIC V2.2 controller unconfirmed,identified label,future
+LCD 1602 I2C,PCF8574 family probable,probable,future with logic verification
+L298N,dual H bridge,identified label,future once motor sourced
+HW-131,breadboard supply,identified label,future
+LX-LCBST,charger and adjustable boost,identified label,excluded until verification
+5V DVE adapter,5V 3A label,label reported,future
+12V adapter,12V 2A label,label reported,excluded first phase
+ANENG A3004 / 830,multimeters,reported/packaging,verification
+"breadboards, headers, jumpers",passives and wiring,reported,prototype
+resistors,assorted values,reported,pullups after measurement
+LED/potentiometers/discretes,unconfirmed exact parts,reported,future

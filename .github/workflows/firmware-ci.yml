@@ -1,0 +1,20 @@
+name: Firmware static build (untested on physical PCB)
+on:
+  workflow_dispatch:
+  push:
+    paths: ['firmware/**', '.github/workflows/firmware-ci.yml']
+  pull_request:
+    paths: ['firmware/**', '.github/workflows/firmware-ci.yml']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [edgesense, ppg_motion]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install platformio
+      - run: pio run -d firmware -e ${{ matrix.target }}

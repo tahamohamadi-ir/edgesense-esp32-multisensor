@@ -1,0 +1,1 @@
+Every JSONL record here has `synthetic: true`. These are deliberately artificial protocol-test fixtures, not hardware sensor captures or empirical results. NEVER use them for training, research conclusions, or CV outcomes.

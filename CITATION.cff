@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: 'If you use this software, please cite this repository; this is engineering software, not a peer-reviewed article.'
+title: 'EdgeSense ESP32-S3: Multisensor Acquisition and Quality Validation Toolkit'
+type: software
+authors:
+  - family-names: Mohammadi
+    given-names: Taha
+license: MIT
+repository-code: https://github.com/tahamohamadi-ir/edgesense-esp32-multisensor
+version: 0.1.0
+date-released: 2026-10-23

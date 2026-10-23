@@ -1,0 +1,20 @@
+# Unpublished raw captures may include biometric or location-related data.
+data/
+reports/
+*.csv
+*.jsonl
+!examples/*.jsonl
+!examples/*.csv
+.env
+.env.*
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.pio/
+firmware/.pio/
+.idea/
+.vscode/
+.DS_Store
+!hardware/component_register.csv

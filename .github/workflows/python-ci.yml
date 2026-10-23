@@ -1,0 +1,20 @@
+name: Python protocol tests
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest -q
+      - name: Smoke synthetic-only data flow
+        run: |
+          edgesense simulate --out data/synthetic/fixture.jsonl --frames 100
+          edgesense audit --input data/synthetic/fixture.jsonl --out reports/qa.json
+          edgesense features --input data/synthetic/fixture.jsonl --out reports/features.csv
+          python -c 'import json; q=json.load(open("reports/qa.json")); assert q["contains_synthetic_data"] and q["invalid_lines"]==0'

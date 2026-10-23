@@ -1,0 +1,8 @@
+{
+  "data_origin": "deterministic artificial simulator",
+  "real_sensor_readings": false,
+  "nonclinical": true,
+  "intended_use": "CI / parser / schema smoke checks only",
+  "seed": 42,
+  "schema_version": 1
+}
